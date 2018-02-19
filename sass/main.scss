@@ -1,0 +1,426 @@
+/*----------
+SETTINGS
+----------*/
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
+
+/*
+@font-face {
+    font-family: 'Aktiv Grotesk Light';
+    src: url('../fonts/subset-AktivGrotesk-Light.woff2') format('woff2'),
+        url('../fonts/subset-AktivGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+*/
+@font-face {
+    font-family: 'Aktiv Grotesk';
+    src: url('../fonts/subset-AktivGrotesk-Regular.woff2') format('woff2'),
+        url('../fonts/subset-AktivGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('../fonts/subset-MinionPro-Regular.woff2') format('woff2'),
+        url('../fonts/subset-MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Minion Pro Italic';
+    src: url('../fonts/subset-MinionPro-It.woff2') format('woff2'),
+        url('../fonts/subset-MinionPro-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+/*----------
+VARIABLES
+----------*/
+
+/*fonts*/
+$primary-font: "Aktiv Grotesk Light", Arial;
+$secondary-font: "Aktiv Grotesk", Arial;
+$third-font: "Minion Pro", serif;
+$fourth-font: "Minion Pro Italic", serif;
+
+/*further*/
+$further-primary: #55857F;
+$further-secondary: #F1ECE7;
+$further-text: #78706B;
+
+/*greatworks*/
+$greatworks-grey: #797E81;
+$greatworks-dark: #6E7375;
+$greatworks-shadow: #565A5C;
+$greatworks-text: #CED5D9;
+
+/*personalfinance*/
+$personalfinance-secondary: #F03C64;
+$personalfinance-primary-light: #783282;
+$personalfinance-primary: #500A5A;
+$personalfinance-text: #E0CCE3;
+
+/*bullogram*/
+$bullogram-primary: #F17397;
+$bullogram-primary-light: #F2DAE1;
+$bullogram-primary-bright: #F7E4E9;
+$bullogram-primary-dark: #592B38;
+$bullogram-shadow: #D9BFC6;
+
+/*yousee*/
+$yousee-primary: #50CC5C;
+$yousee-primary-dark: #14503A;
+$yousee-primary-darkest: #114230;
+$yousee-primary-light: #CFE6D1;
+
+/*animations*/
+$transition: all 0.25s ease;
+
+/*----------
+THEMES
+----------*/
+
+/*frontpage*/
+#frontpage {
+  background: black;
+  h1 {
+    color: white;
+  }
+  a, p {
+    color: grey;
+  }
+  #info {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    width: 1200px;
+    margin: 80px auto auto auto;
+  }
+  #cases {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    width: 1200px;
+    margin: 160px auto auto auto;
+    .greatworks {
+      padding-right: 240px;
+    }
+    .bullogram {
+      padding-right: 80px;
+    }
+    .yousee {
+      padding-left: 160px;
+    }
+    .personalfinance {
+      padding-left: 160px;
+    }
+    img + p {
+      margin-top: 20px;
+    }
+  }
+}
+
+/*further*/
+#further {
+  background: $further-secondary;
+  h1 {
+    color: $further-primary;
+  }
+  .align-right {
+    a, p {
+      color: $further-primary;
+    }
+  }
+  a, p {
+    color: $further-text;
+  }
+}
+
+/*greatworks*/
+#greatworks {
+  background: $greatworks-grey;
+  h1 {
+    color: white;
+  }
+  .align-right {
+    a, p {
+      color: white;
+    }
+  }
+  a, p {
+    color: $greatworks-text;
+  }
+  .lg, .bg-one-screen, .bg-two-screens {
+    background: $greatworks-dark;
+  }
+  .lg, .bg-one-screen, .bg-two-screens, .bg-three-screens {
+    img, video {
+      filter: drop-shadow(8px 8px 16px $greatworks-shadow);
+    }
+  }
+}
+
+/*bullogram*/
+#personalfinance {
+  background: $personalfinance-primary;
+  h1 {
+    color: $personalfinance-secondary;
+  }
+  .align-right {
+    a, p {
+      color: $personalfinance-secondary;
+    }
+  }
+  a, p {
+    color: $personalfinance-text;
+  }
+  .lg {
+    background: $personalfinance-primary-light;
+  }
+  .bg-three-screens, .bg-four-screens {
+    img {
+      filter: drop-shadow(8px 8px 16px $personalfinance-primary);
+    }
+  }
+}
+
+/*bullogram*/
+#bullogram {
+  background: $bullogram-primary-light;
+  h1 {
+    color: $bullogram-primary;
+  }
+  .align-right {
+    a, p {
+      color: $bullogram-primary;
+    }
+  }
+  a, p {
+    color: $bullogram-primary-dark;
+  }
+  .lg, .bg-one-screen, .bg-two-screens {
+    background: $bullogram-primary-bright;
+  }
+  .bg-one-screen, .bg-two-screens, .bg-three-screens {
+    img, video {
+      filter: drop-shadow(8px 8px 16px $bullogram-shadow);
+    }
+  }
+}
+
+/*yousee*/
+#yousee {
+  background: $yousee-primary-dark;
+  h1 {
+    color: $yousee-primary;
+  }
+  .align-right {
+    a, p {
+      color: $yousee-primary;
+    }
+  }
+  a, p {
+    color: $yousee-primary-light;
+  }
+  .lg, .bg-one-screen, .bg-two-screens {
+    background: $yousee-primary-darkest;
+  }
+  .bg-one-screen, .bg-two-screens, .bg-three-screens {
+    img, video {
+      filter: drop-shadow(8px 8px 16px $yousee-primary-darkest);
+    }
+  }
+}
+
+/*----------
+GENERAL
+----------*/
+
+* {
+  box-sizing: border-box;
+}
+h1, h2, a, p {
+  font-family: $secondary-font;
+}
+h1, h2 {
+  color: white;
+  font-size: 64px;
+  line-height: 84px;
+  .minion {
+    font-size: 74px;
+  }
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 18px;
+  line-height: 32px;
+}
+img {
+  max-width: 100%;
+}
+video {
+  width: 100%;
+}
+.line {
+  display: inline-block;
+  position: relative;
+  margin: auto 10px;
+  bottom: 5px;
+  width: 20px;
+  height: 1px;
+  background: grey;
+}
+
+/*----------
+LAYOUT
+----------*/
+
+.lg, .bg-four-screens {
+  width: 100%;
+}
+.bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+  padding: 80px;
+}
+.content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+  display: grid;
+  grid-column-gap: 80px;
+}
+.intro, .content, .bg-one-screen, .bg-three-screens, .picture {
+  width: 1200px;
+  margin: auto;
+}
+.content {
+  grid-template: auto / 1fr 2fr;
+}
+.bg-two-screens {
+  grid-template: auto / repeat(2, 1fr);
+}
+.bg-three-screens {
+  grid-template: auto / repeat(3, 1fr);
+}
+.bg-four-screens {
+  grid-template: auto / repeat(4, 1fr);
+}
+#back-button {
+  width: 1200px;
+  margin: 80px auto auto auto;
+  a {
+    font-size: 18px;
+    img {
+      position: relative;
+      top: 2px;
+      margin-right: 10px;
+    }
+  }
+}
+
+/*----------
+TWEAKS
+----------*/
+
+.minion {
+  font-family: $fourth-font;
+}
+.bottom160 {
+  margin-bottom: 160px;
+}
+.top160 {
+  margin-top: 160px;
+}
+.top80 {
+    margin-top: 80px;
+}
+.top15 {
+    margin-top: 15px;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
+
+/*----------
+MEDIA QUERIES
+----------*/
+
+@media screen and (max-width: 1200px) {
+  h1, h2 {
+    font-size: 36px;
+    line-height: 54px;
+    .minion {
+      font-size: 40px;
+    }
+  }
+  #frontpage {
+    #info {
+      display: block;
+      width: 80%;
+      margin: 40px auto auto auto;
+      .align-right {
+        margin-top: 20px;
+      }
+    }
+    #cases {
+      display: block;
+      width: 80%;
+      margin: 80px auto auto auto;
+      .greatworks {
+        padding-right: 0px;
+      }
+      .bullogram {
+        padding-right: 0px;
+      }
+      .yousee {
+        padding-left: 0px;
+      }
+      .personalfinance {
+        padding-left: 0px;
+      }
+      img + p {
+        margin-top: 10px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+  #info, #cases, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+    display: block;
+  }
+  .bg-one-screen, .bg-three-screens, .picture {
+    width: 100%;
+  }
+  .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+    padding: 40px;
+    img {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  #back-button, #info, .intro, .content {
+    width: 80%;
+  }
+  #back-button, #info {
+    margin-top: 40px;
+  }
+  .top160 {
+    margin-top: 80px;
+  }
+  .top80 {
+    margin-top: 60px;
+  }
+  .bottom160 {
+    margin-bottom: 80px;
+  }
+  .content {
+    .align-right {
+      margin-bottom: 40px;
+    }
+  }
+  .align-right {
+    text-align: left;
+  }
+  .align-center {
+    text-align: left;
+  }
+}
