@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body id="bullogram">
+      <div class="loader"></div>
       <div id="back-button">
         <a href="index.html"><img src="assets/icon-arrow-back-bullogram.svg">Cases</a>
       </div>
@@ -55,5 +56,18 @@
           <h2><a href="yousee.html">Mærk musikken.<br>A <span class="minion">youSee</span> live event at the Royal Arena.</a></h2>
         </div>
       </div>
+      <div class="info">
+        <div></div>
+        <div class="align-right">
+          <p><a href="mailto:manuel.sourdrille@gmail.com">Get in touch</a></p>
+          <p><a href="https://fr.linkedin.com/in/manuel-sourdrille-1004a44a" target="_blank">Linkedin</a></p>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      $(window).on('load', function() {
+        $(".loader").fadeOut("slow");
+      });
+      </script>
     </body>
 </html>

@@ -10,7 +10,8 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body id="frontpage">
-      <div id="info">
+      <div class="loader"></div>
+      <div class="info">
         <div><p>Manuel<span class="line"></span>Visual designer</p></div>
         <div class="align-right">
           <p><a href="mailto:manuel.sourdrille@gmail.com">Get in touch</a></p>
@@ -64,5 +65,11 @@
           <h3>During the last few years, I have been working with brands such as Danske Bank, Nordea, Telenor, Toms & Velux.  Also, I’ve hitchhiked more than 50.000 kilometers, from France to China and vice-versa in 2015/2016.</p>
         </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script type="text/javascript">
+      $(window).on('load', function() {
+        $(".loader").fadeOut("slow");
+      });
+      </script>
     </body>
 </html>

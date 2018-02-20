@@ -134,6 +134,18 @@ LAYOUT
     margin-top: 80px;
   }
 }
+.loader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 110;
+	background: url('../assets/loader.gif') 50% 50% no-repeat black;
+}
+.info {
+  margin: 160px 80px;
+}
 .lg, .bg-four-screens {
   width: 100%;
 }
@@ -143,7 +155,7 @@ LAYOUT
 .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   padding: 80px;
 }
-#info, #cases, .apropos, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+.info, #cases, .apropos, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   display: grid;
 }
 .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
@@ -158,7 +170,7 @@ LAYOUT
 .content, .apropos {
   grid-template: auto / 1fr 3fr;
 }
-#info, #cases, .bg-two-screens {
+.info, #cases, .bg-two-screens {
   grid-template: auto / repeat(2, 1fr);
 }
 .bg-three-screens {
@@ -221,8 +233,8 @@ THEMES
   a, p {
     color: grey;
   }
-  #info {
-    margin: 160px 80px;
+  .apropos + .info {
+    display: none;
   }
   #cases {
     margin: 160px auto auto auto;
@@ -388,7 +400,7 @@ MEDIA QUERIES
       }
     }
   }
-  #frontpage #info, #back-button, .intro, .content, .apropos, .bg-three-screens {
+  .info, #back-button, .intro, .content, .apropos, .bg-three-screens {
     width: 90%;
   }
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens, .picture{
@@ -397,7 +409,7 @@ MEDIA QUERIES
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens{
     padding: 5%;
   }
-  #frontpage #info, #back-button {
+.info, #back-button {
     margin: 40px 5% 120px 5%;
   }
   #back-button + .content h1 + p {
@@ -458,7 +470,7 @@ MEDIA QUERIES
       margin-top: 10px;
     }
   }
-  #frontpage #info, #back-button {
+.info, #back-button {
     margin: 40px 5% 60px 5%;
   }
   #back-button + .content {
@@ -478,11 +490,6 @@ MEDIA QUERIES
     }
   }
   #frontpage {
-    #info {
-      .align-right {
-        display: none;
-      }
-    }
     #cases {
       .greatworks {
         padding-right: 0px;
@@ -502,10 +509,10 @@ MEDIA QUERIES
       }
     }
   }
-  #info, #cases, .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+  .info, #cases, .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     display: block;
   }
-  #info {
+  .info {
     margin-top: 40px;
   }
   .top80 {
