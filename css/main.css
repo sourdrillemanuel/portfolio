@@ -1,6 +1,7 @@
 /*----------
 SETTINGS
 ----------*/
+@import "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css";
 @font-face {
   font-family: 'Aktiv Grotesk Light';
   src: url("../fonts/subset-AktivGrotesk-Light.woff2") format("woff2"), url("../fonts/subset-AktivGrotesk-Light.woff") format("woff");
@@ -42,51 +43,62 @@ VARIABLES
 /*----------
 GENERAL
 ----------*/
+/* line 82, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 * {
   box-sizing: border-box;
 }
 
+/* line 85, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 h1, h2, h3 {
   font-family: "Aktiv Grotesk Light", Arial;
 }
 
+/* line 88, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a, p {
   font-family: "Aktiv Grotesk", Arial;
 }
 
+/* line 91, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 h1, h2 {
   color: white;
   font-size: 64px;
   line-height: 84px;
 }
 
+/* line 95, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 h1 .minion, h2 .minion {
   font-size: 74px;
 }
 
+/* line 99, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 h3 {
   color: white;
   font-size: 36px;
   line-height: 48px;
 }
 
+/* line 104, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a {
   text-decoration: none;
 }
 
+/* line 107, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 p {
   font-size: 18px;
   line-height: 32px;
 }
 
+/* line 111, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 img {
   max-width: 100%;
 }
 
+/* line 114, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 video {
   width: 100%;
 }
 
+/* line 117, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .line {
   display: inline-block;
   position: relative;
@@ -100,70 +112,87 @@ video {
 /*----------
 LAYOUT
 ----------*/
+/* line 131, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #back-button + .content {
   margin-top: 160px;
 }
 
+/* line 133, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #back-button + .content h1 + p {
   margin-top: 80px;
 }
 
+/* line 137, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .info {
   margin: 40px 80px 160px 80px;
 }
 
+/* line 140, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .lg, .bg-four-screens {
   width: 100%;
 }
 
+/* line 143, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .content {
   padding: 0px 80px;
 }
 
+/* line 146, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   padding: 80px;
 }
 
+/* line 149, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .info, #cases, .apropos, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   display: grid;
 }
 
+/* line 152, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   grid-column-gap: 80px;
 }
 
+/* line 155, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #cases, .intro, .apropos, .content, .bg-one-screen, .bg-three-screens, .picture {
   width: 1200px;
 }
 
+/* line 158, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .intro, .content, .apropos, .bg-one-screen, .bg-three-screens, .picture {
   margin: auto;
 }
 
+/* line 161, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .content, .apropos {
   grid-template: auto / 1fr 3fr;
 }
 
+/* line 164, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .info, #cases, .bg-two-screens {
   grid-template: auto/repeat(2, 1fr);
 }
 
+/* line 167, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .bg-three-screens {
   grid-template: auto/repeat(3, 1fr);
 }
 
+/* line 170, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .bg-four-screens {
   grid-template: auto/repeat(4, 1fr);
 }
 
+/* line 173, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #back-button {
   margin: 80px auto auto 80px;
 }
 
+/* line 175, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #back-button a {
   font-size: 18px;
 }
 
+/* line 177, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #back-button a img {
   position: relative;
   top: 2px;
@@ -173,34 +202,42 @@ LAYOUT
 /*----------
 TWEAKS
 ----------*/
+/* line 189, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .minion {
   font-family: "Minion Pro Italic", serif;
 }
 
+/* line 192, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .bottom160 {
   margin-bottom: 160px;
 }
 
+/* line 195, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .top160 {
   margin-top: 160px;
 }
 
+/* line 198, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .top80 {
   margin-top: 80px;
 }
 
+/* line 201, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .top15 {
   margin-top: 15px;
 }
 
+/* line 204, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .top8 {
   margin-top: 8px;
 }
 
+/* line 207, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .align-right {
   text-align: right;
 }
 
+/* line 210, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .align-center {
   text-align: center;
 }
@@ -209,163 +246,202 @@ TWEAKS
 THEMES
 ----------*/
 /*frontpage*/
+/* line 219, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage {
   background: black;
 }
 
+/* line 221, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage h1 {
   color: white;
 }
 
+/* line 224, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage a, #frontpage p {
   color: grey;
 }
 
+/* line 227, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage .apropos + .info {
   display: none;
 }
 
+/* line 230, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases {
   margin: 160px auto auto auto;
 }
 
+/* line 232, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases .greatworks {
   padding-right: 240px;
 }
 
+/* line 235, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases .bullogram {
   padding-right: 80px;
 }
 
+/* line 238, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases .yousee {
   padding-left: 160px;
 }
 
+/* line 241, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases .personalfinance {
   padding-left: 160px;
 }
 
+/* line 244, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage #cases img + p, #frontpage #cases img + p + p {
   margin-top: 20px;
 }
 
 /*further*/
+/* line 251, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further {
   background: #F1ECE7;
 }
 
+/* line 253, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further .lg img {
   width: 100%;
 }
 
+/* line 256, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further h1 {
   color: #55857F;
 }
 
+/* line 260, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further .align-right a, #further .align-right p {
   color: #55857F;
 }
 
+/* line 264, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further a, #further p {
   color: #78706B;
 }
 
 /*greatworks*/
+/* line 270, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks {
   background: #797E81;
 }
 
+/* line 272, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks h1 {
   color: white;
 }
 
+/* line 276, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks .align-right a, #greatworks .align-right p {
   color: white;
 }
 
+/* line 280, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks a, #greatworks p {
   color: #CED5D9;
 }
 
+/* line 283, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks .lg, #greatworks .bg-one-screen, #greatworks .bg-two-screens {
   background: #6E7375;
 }
 
+/* line 287, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks .lg img, #greatworks .lg video, #greatworks .bg-one-screen img, #greatworks .bg-one-screen video, #greatworks .bg-two-screens img, #greatworks .bg-two-screens video, #greatworks .bg-three-screens img, #greatworks .bg-three-screens video {
   filter: drop-shadow(8px 8px 16px #565A5C);
 }
 
 /*bullogram*/
+/* line 294, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance {
   background: #500A5A;
 }
 
+/* line 296, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance h1 {
   color: #F03C64;
 }
 
+/* line 300, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance .align-right a, #personalfinance .align-right p {
   color: #F03C64;
 }
 
+/* line 304, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance a, #personalfinance p {
   color: #E0CCE3;
 }
 
+/* line 307, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance .lg {
   background: #783282;
 }
 
+/* line 311, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance .bg-three-screens img, #personalfinance .bg-four-screens img {
   filter: drop-shadow(8px 8px 16px #500A5A);
 }
 
 /*bullogram*/
+/* line 318, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram {
   background: #F2DAE1;
 }
 
+/* line 320, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram h1 {
   color: #F17397;
 }
 
+/* line 324, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram .align-right a, #bullogram .align-right p {
   color: #F17397;
 }
 
+/* line 328, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram a, #bullogram p {
   color: #592B38;
 }
 
+/* line 331, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram .lg, #bullogram .bg-one-screen, #bullogram .bg-two-screens {
   background: #F7E4E9;
 }
 
+/* line 335, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram .bg-one-screen img, #bullogram .bg-one-screen video, #bullogram .bg-two-screens img, #bullogram .bg-two-screens video, #bullogram .bg-three-screens img, #bullogram .bg-three-screens video {
   filter: drop-shadow(8px 8px 16px #D9BFC6);
 }
 
 /*yousee*/
+/* line 342, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee {
   background: #14503A;
 }
 
+/* line 344, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee h1 {
   color: #50CC5C;
 }
 
+/* line 348, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee .align-right a, #yousee .align-right p {
   color: #50CC5C;
 }
 
+/* line 352, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee a, #yousee p {
   color: #CFE6D1;
 }
 
+/* line 355, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee .lg, #yousee .bg-one-screen, #yousee .bg-two-screens {
   background: #114230;
 }
 
+/* line 359, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee .bg-one-screen img, #yousee .bg-one-screen video, #yousee .bg-two-screens img, #yousee .bg-two-screens video, #yousee .bg-three-screens img, #yousee .bg-three-screens video {
   filter: drop-shadow(8px 8px 16px #114230);
 }
@@ -373,6 +449,7 @@ THEMES
 /*----------
 ANIMATIONS
 ----------*/
+/* line 369, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .loader {
   position: fixed;
   left: 0;
@@ -383,71 +460,88 @@ ANIMATIONS
   background: url("../assets/loader.gif") 50% 50% no-repeat black;
 }
 
+/* line 378, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 .link-to-case {
   display: none;
 }
 
+/* line 381, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a {
   transition: all 0.25s ease;
 }
 
+/* line 383, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a img {
   transition: all 0.25s ease;
 }
 
+/* line 388, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a:hover img {
   opacity: 0.6;
 }
 
+/* line 391, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a:hover .link-to-case {
   color: white !important;
   display: block;
 }
 
+/* line 395, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 a:hover .link-to-case + p {
   display: none;
 }
 
+/* line 399, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further .content a:hover {
   color: #45403D;
 }
 
+/* line 402, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #further .info a:hover {
   color: #34524E;
 }
 
+/* line 405, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks .info a:hover {
   color: #CED5D9;
 }
 
+/* line 408, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #greatworks .content a:hover {
   color: white;
 }
 
+/* line 411, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance .content a:hover {
   color: white;
 }
 
+/* line 414, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #personalfinance .info a:hover {
   color: #F06C88;
 }
 
+/* line 417, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram .content a:hover {
   color: #8C4358;
 }
 
+/* line 420, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #bullogram .info a:hover {
   color: #BF5C78;
 }
 
+/* line 423, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee .content a:hover {
   color: white;
 }
 
+/* line 426, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #yousee .info a:hover {
   color: #A1CCA5;
 }
 
+/* line 429, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
 #frontpage .info a:hover {
   color: white;
 }
@@ -457,68 +551,88 @@ MEDIA QUERIES
 ----------*/
 /*tablet*/
 @media screen and (max-width: 1200px) {
+  /* line 439, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h1, h2 {
     font-size: 40px;
     line-height: 54px;
   }
+  /* line 442, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h1 .minion, h2 .minion {
     font-size: 46px;
   }
+  /* line 446, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h3 {
     font-size: 28px;
     line-height: 40px;
   }
+  /* line 450, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   p {
     font-size: 16px;
     line-height: 28px;
   }
+  /* line 455, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #back-button a {
     font-size: 16px;
   }
+  /* line 457, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #back-button a img {
     height: 16px;
   }
+  /* line 462, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .info, #back-button, .intro, .content, .apropos, .bg-three-screens {
     width: 90%;
   }
+  /* line 465, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens, .picture {
     width: 100%;
   }
+  /* line 468, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens {
     padding: 5%;
   }
+  /* line 471, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .info, #back-button {
     margin: 40px 5% 120px 5%;
   }
+  /* line 474, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #back-button + .content h1 + p {
     margin-top: 40px;
   }
+  /* line 477, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content {
     padding: 0px 80px;
   }
+  /* line 479, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content .align-right {
     margin-top: 8px;
   }
+  /* line 483, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .bg-three-screens {
     padding: 0px;
     grid-column-gap: 5%;
   }
+  /* line 487, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content, .apropos, .bg-two-screens, .bg-four-screens {
     grid-column-gap: 5%;
   }
+  /* line 490, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content, .apropos {
     grid-template: auto / 1fr 4fr;
   }
+  /* line 493, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .top160 {
     margin-top: 80px;
   }
+  /* line 496, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .bottom160 {
     margin-bottom: 80px;
   }
+  /* line 499, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #frontpage #cases {
     grid-column-gap: 20%;
     margin: 160px auto auto auto;
   }
+  /* line 502, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #frontpage #cases .greatworks, #frontpage #cases .bullogram, #frontpage #cases .yousee, #frontpage #cases .personalfinance {
     padding-right: 0px;
     padding-left: 0px;
@@ -527,69 +641,91 @@ MEDIA QUERIES
 
 /*phone*/
 @media screen and (max-width: 667px) {
+  /* line 511, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h1, h2 {
     font-size: 32px;
     line-height: 44px;
   }
+  /* line 514, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h1 .minion, h2 .minion {
     font-size: 38px;
   }
+  /* line 518, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   h3 {
     font-size: 24px;
     line-height: 36px;
   }
+  /* line 522, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #frontpage #cases {
     margin: 80px auto auto auto;
   }
+  /* line 524, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #frontpage #cases .greatworks, #frontpage #cases .bullogram, #frontpage #cases .yousee, #frontpage #cases .personalfinance {
     padding-right: 0px;
     padding-left: 0px;
   }
+  /* line 528, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #frontpage #cases img + p, #frontpage #cases img + p + p {
     margin-top: 10px;
     margin-bottom: 80px;
   }
+  /* line 533, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .info, #back-button {
     margin: 40px 5% 60px 5%;
   }
+  /* line 536, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #back-button + .content {
     margin: 40px auto;
     padding: 0px;
   }
+  /* line 539, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   #back-button + .content h1 + p {
     margin-top: 40px;
   }
+  /* line 543, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .bg-one-screen, .bg-three-screens, .picture {
     width: 100%;
   }
+  /* line 546, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     padding: 20px;
   }
+  /* line 548, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .bg-one-screen img, .bg-two-screens img, .bg-three-screens img, .bg-four-screens img {
     margin: 20px auto;
   }
+  /* line 552, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .info, #cases, .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     display: block;
   }
+  /* line 555, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .info {
     margin-top: 40px;
   }
+  /* line 558, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .top80 {
     margin-top: 20px;
   }
+  /* line 561, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .top8 {
     margin-bottom: 20px;
   }
+  /* line 564, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content {
     padding: 0px;
   }
+  /* line 566, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .content .align-right {
     margin-bottom: 40px;
   }
+  /* line 570, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .align-right {
     text-align: left;
   }
+  /* line 573, /Users/ms/Documents/Projects/Personal Portfolio/Portfolio/portfolio/sass/main.scss */
   .align-center {
     text-align: left;
   }
 }
+
+/*# sourceMappingURL=../css/main.map */
