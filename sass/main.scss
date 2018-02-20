@@ -82,7 +82,7 @@ GENERAL
 * {
   box-sizing: border-box;
 }
-h1, h2 {
+h1, h2, h3 {
   font-family: $primary-font;
 }
 a, p {
@@ -95,6 +95,11 @@ h1, h2 {
   .minion {
     font-size: 74px;
   }
+}
+h3 {
+  color: white;
+  font-size: 36px;
+  line-height: 48px;
 }
 a {
   text-decoration: none;
@@ -132,23 +137,26 @@ LAYOUT
 .lg, .bg-four-screens {
   width: 100%;
 }
+.content {
+  padding: 0px 80px;
+}
 .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   padding: 80px;
 }
-#info, #cases, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+#info, #cases, .apropos, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   display: grid;
 }
-.content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+.content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   grid-column-gap: 80px;
 }
-#cases, .intro, .content, .bg-one-screen, .bg-three-screens, .picture {
+#cases, .intro, .apropos, .content, .bg-one-screen, .bg-three-screens, .picture {
   width: 1200px;
 }
-.intro, .content, .bg-one-screen, .bg-three-screens, .picture {
+.intro, .content, .apropos, .bg-one-screen, .bg-three-screens, .picture {
   margin: auto;
 }
-.content {
-  grid-template: auto / 1fr 2fr;
+.content, .apropos {
+  grid-template: auto / 1fr 3fr;
 }
 #info, #cases, .bg-two-screens {
   grid-template: auto / repeat(2, 1fr);
@@ -190,6 +198,9 @@ TWEAKS
 .top15 {
     margin-top: 15px;
 }
+.top8 {
+    margin-top: 8px;
+}
 .align-right {
   text-align: right;
 }
@@ -211,7 +222,7 @@ THEMES
     color: grey;
   }
   #info {
-    margin: 80px 80px auto 80px;
+    margin: 160px 80px;
   }
   #cases {
     margin: 160px auto auto auto;
@@ -361,6 +372,10 @@ MEDIA QUERIES
       font-size: 46px;
     }
   }
+  h3 {
+    font-size: 28px;
+    line-height: 40px;
+  }
   p {
     font-size: 16px;
     line-height: 28px;
@@ -373,11 +388,13 @@ MEDIA QUERIES
       }
     }
   }
-  #frontpage #info, #back-button, .content, .bg-three-screens {
+  #frontpage #info, #back-button, .intro, .content, .apropos, .bg-three-screens {
     width: 90%;
   }
-  #cases, .intro, .bg-one-screen, .bg-two-screens, .bg-four-screens {
+  #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens, .picture{
     width: 100%;
+  }
+  #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens{
     padding: 5%;
   }
   #frontpage #info, #back-button {
@@ -387,6 +404,7 @@ MEDIA QUERIES
     margin-top: 40px;
   }
   .content {
+    padding: 0px 80px;
     .align-right {
       margin-top: 8px;
     }
@@ -395,10 +413,10 @@ MEDIA QUERIES
     padding: 0px;
     grid-column-gap: 5%;
   }
-  .content, .bg-two-screens, .bg-four-screens {
+  .content, .apropos, .bg-two-screens, .bg-four-screens {
     grid-column-gap: 5%;
   }
-  .content {
+  .content, .apropos, {
     grid-template: auto / 1fr 4fr;
   }
   .top160 {
@@ -426,17 +444,22 @@ MEDIA QUERIES
       font-size: 38px;
     }
   }
-  #back-button, #back-button + .content {
-    width: 90%;
+  h3 {
+    font-size: 24px;
+    line-height: 36px;
   }
-  #back-button {
-    margin: 20px auto;
-    a {
-      font-size: 16px;
-      img {
-        height: 16px;
-      }
+  #frontpage #cases {
+    margin: 80px auto auto auto;
+    .greatworks, .bullogram, .yousee, .personalfinance {
+      padding-right: 0px;
+      padding-left: 0px;
     }
+    img + p {
+      margin-top: 10px;
+    }
+  }
+  #frontpage #info, #back-button {
+    margin: 40px 5% 60px 5%;
   }
   #back-button + .content {
     margin: 40px auto;
@@ -451,19 +474,16 @@ MEDIA QUERIES
   .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     padding: 20px;
     img {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      margin: 20px auto;
     }
   }
   #frontpage {
     #info {
-      margin: 40px auto auto auto;
       .align-right {
-        margin-top: 20px;
+        display: none;
       }
     }
     #cases {
-      margin: 80px auto auto auto;
       .greatworks {
         padding-right: 0px;
       }
@@ -482,11 +502,8 @@ MEDIA QUERIES
       }
     }
   }
-  #info, #cases, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+  #info, #cases, .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     display: block;
-  }
-  #info, #cases, .intro, .content {
-    width: 80%;
   }
   #info {
     margin-top: 40px;
@@ -494,10 +511,14 @@ MEDIA QUERIES
   .top80 {
     margin-top: 20px;
   }
+  .top8 {
+    margin-bottom: 20px;
+  }
   .bottom160 {
     margin-bottom: 80px;
   }
   .content {
+    padding: 0px;
     .align-right {
       margin-bottom: 40px;
     }
