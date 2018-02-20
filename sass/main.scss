@@ -85,6 +85,9 @@ GENERAL
 h1, h2, h3 {
   font-family: $primary-font;
 }
+h2 a {
+  font-family: $primary-font;
+}
 a, p {
   font-family: $secondary-font;
 }
