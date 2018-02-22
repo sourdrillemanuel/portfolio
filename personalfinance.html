@@ -14,7 +14,7 @@
       <div id="back-button">
         <a href="index.html"><img src="assets/icon-arrow-back-personalfinance.svg">Cases</a>
       </div>
-      <div class="content">
+      <div class="header">
         <div class="align-right top15">
           <p class="minion">2017</p>
           <p>Visual design</p>
@@ -22,7 +22,7 @@
         </div>
         <div>
           <h1>Engage kids through a <span class="minion">playful</span> and educational platform.</h1>
-          <p class="top80">The app is an engaging and playful educational digital platform, a universe for 10-15-years-old. The main purpose is to help them gain financial confidence, teaching them how to manage, spend and protect money. The goal is to provide an immersive and intuitive experience which offers educational content about personal finance.</p>
+          <p class="top80">The app is an engaging and playful educational digital platform to help kids gain financial confidence. The goal is to provide an immersive and intuitive experience which offers educational content about personal finance. </p>
         </div>
       </div>
       <div class="bg-three-screens top80">
@@ -32,20 +32,20 @@
       </div>
       <div class="content top80">
         <div></div>
-        <div><p>Nowadays, most of children can be easily bored if the experience isn't attractive or captivating enough. The purpose is to create a rich, memorable and positive product which instructs them and raise their self-esteem and confidence. To achieve that goal, the interface has to be user-centric, enticing and relevant.</p>
+        <div><p>Children can be easily bored if the experience isn't attractive or captivating enough. The purpose is to create a rich, memorable and positive product which instructs them and raise their self-esteem and confidence. To achieve that goal, the interface has to be user-centric, enticing and relevant.</p>
         </div>
       </div>
       <div class="lg">
         <div class="bg-four-screens top160">
           <div><img src="assets/personalfinance-phone-04.png" alt="Personal Finance iPhone Screen"></div>
-          <div><img src="assets/personalfinance-phone-05.png" alt="Personal Finance iPhone Screen"></div>
           <div><img src="assets/personalfinance-phone-06.png" alt="Personal Finance iPhone Screen"></div>
+          <div><img src="assets/personalfinance-phone-05.png" alt="Personal Finance iPhone Screen"></div>
           <div><img src="assets/personalfinance-phone-07.png" alt="Personal Finance iPhone Screen"></div>
         </div>
       </div>
       <div class="content top160">
         <div></div>
-        <div><p>At the end of the quiz, you collect coins. The higher you score, the more you earn. In addition to coins, your level rises. Through achievements and skills, the purpose is to encourage users, arouse their interest and keep their determination high. Also, many avatars are available and can be personalized.</p>
+        <div><p>Through achievements and skills, we keep kids’ interest high and aim to raise their self-esteem and financial confidence.</p>
         </div>
       </div>
       <div class="content top160 bottom160">
@@ -68,6 +68,23 @@
       $(window).on('load', function() {
         $(".loader").fadeOut("slow");
       });
+      </script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          if (scroll > 600) {
+            $("body").css("background" , "white");
+            $(".header p").css("color" , "white");
+            $(".header p").css("opacity" , "1");
+          }
+          else{
+            $("body").css("background" , "#F03C64");
+            $(".header p").css("color" , "#white");
+            $(".header p").css("opacity" , ".8");
+          }
+        })
+      })
       </script>
     </body>
 </html>

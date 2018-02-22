@@ -55,7 +55,6 @@ $greatworks-text: #CED5D9;
 
 /*personalfinance*/
 $personalfinance-secondary: #F03C64;
-$personalfinance-primary-light: #783282;
 $personalfinance-primary: #500A5A;
 $personalfinance-text: #E0CCE3;
 
@@ -81,6 +80,9 @@ GENERAL
 
 * {
   box-sizing: border-box;
+}
+body {
+  transition: $transition;
 }
 h1, h2, h3 {
   font-family: $primary-font;
@@ -131,8 +133,8 @@ video {
 LAYOUT
 ----------*/
 
-#back-button + .content {
-  margin-top: 160px;
+.header {
+  margin: 160px auto auto auto;
   h1 + p {
     margin-top: 80px;
   }
@@ -143,25 +145,25 @@ LAYOUT
 .lg, .bg-four-screens {
   width: 100%;
 }
-.content {
+.content, .header {
   padding: 0px 80px;
 }
 .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   padding: 80px;
 }
-.info, #cases, .apropos, .content, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+.info, #cases, .apropos, .content, .header, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   display: grid;
 }
-.content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+.content, .header, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
   grid-column-gap: 80px;
 }
-#cases, .intro, .apropos, .content, .bg-one-screen, .bg-three-screens, .picture {
+#cases, .intro, .apropos, .content, .header, .bg-one-screen, .bg-three-screens, .picture {
   width: 1200px;
 }
 .intro, .content, .apropos, .bg-one-screen, .bg-three-screens, .picture {
   margin: auto;
 }
-.content, .apropos {
+.content, .header, .apropos {
   grid-template: auto / 1fr 3fr;
 }
 .info, #cases, .bg-two-screens {
@@ -225,7 +227,7 @@ THEMES
     color: white;
   }
   a, p {
-    color: grey;
+    color: #7E7E7E;
   }
   .apropos + .info {
     display: none;
@@ -252,115 +254,103 @@ THEMES
 
 /*further*/
 #further {
-  background: $further-secondary;
-  .lg img {
-    width: 100%;
-  }
+  background: #406E68;
   h1 {
-    color: $further-primary;
+    color: white;
   }
-  .align-right {
-    a, p {
-      color: $further-primary;
-    }
+  .header .align-right p, #back-button a, h1 + p {
+    color: white;
+    opacity: .6;
   }
-  a, p {
-    color: $further-text;
+  p, a, h2 a {
+    color: #999999;
   }
 }
 
 /*greatworks*/
 #greatworks {
-  background: $greatworks-grey;
+  background: #45484B;
   h1 {
     color: white;
   }
-  .align-right {
-    a, p {
-      color: white;
-    }
+  .header .align-right p, #back-button a, h1 + p {
+    color: white;
+    opacity: .6;
   }
-  a, p {
-    color: $greatworks-text;
+  p, a, h2 a {
+    color: #999999;
   }
   .lg, .bg-one-screen, .bg-two-screens {
-    background: $greatworks-dark;
+    background: #F7FBFF;
   }
-  .lg, .bg-one-screen, .bg-two-screens, .bg-three-screens {
+  .lg, .bg-one-screen, .bg-two-screens {
     img, video {
-      filter: drop-shadow(8px 8px 16px $greatworks-shadow);
+      filter: drop-shadow(8px 8px 16px #DFE2E6);
     }
   }
 }
 
-/*bullogram*/
+/*personalfinance*/
 #personalfinance {
-  background: $personalfinance-primary;
+  background: $personalfinance-secondary;
   h1 {
-    color: $personalfinance-secondary;
+    color: white;
   }
-  .align-right {
-    a, p {
-      color: $personalfinance-secondary;
-    }
+  .header .align-right p, #back-button a, h1 + p {
+    color: white;
+    opacity: .8;
   }
-  a, p {
-    color: $personalfinance-text;
+  p, a, h2 a {
+    color: #999999;
   }
-  .lg {
-    background: $personalfinance-primary-light;
-  }
-  .bg-three-screens, .bg-four-screens {
-    img {
-      filter: drop-shadow(8px 8px 16px $personalfinance-primary);
-    }
+  .bg-four-screens {
+    background: #FEF7FF;
   }
 }
 
 /*bullogram*/
 #bullogram {
-  background: $bullogram-primary-light;
+  background: $bullogram-primary;
   h1 {
-    color: $bullogram-primary;
+    color: white;
   }
-  .align-right {
-    a, p {
-      color: $bullogram-primary;
-    }
+  .header .align-right p, #back-button a, h1 + p {
+    color: white;
+    opacity: .8;
   }
-  a, p {
-    color: $bullogram-primary-dark;
+  p, a, h2 a {
+    color: #999999;
   }
   .lg, .bg-one-screen, .bg-two-screens {
-    background: $bullogram-primary-bright;
-  }
-  .bg-one-screen, .bg-two-screens, .bg-three-screens {
-    img, video {
-      filter: drop-shadow(8px 8px 16px $bullogram-shadow);
+    background: rgba(251, 115, 151, .1);
+    img {
+      filter: drop-shadow(8px 8px 16px #E6DFE1);
     }
   }
 }
 
 /*yousee*/
 #yousee {
-  background: $yousee-primary-dark;
+  background: $yousee-primary;
   h1 {
-    color: $yousee-primary;
+    color: white;
   }
-  .align-right {
-    a, p {
-      color: $yousee-primary;
-    }
+  .header .align-right p, #back-button a, h1 + p {
+    color: white;
+    opacity: .8;
   }
-  a, p {
-    color: $yousee-primary-light;
+  p, a, h2 a {
+    color: #999999;
   }
-  .lg, .bg-one-screen, .bg-two-screens {
-    background: $yousee-primary-darkest;
+  .bg-one-screen {
+    background: rgba(255, 255, 255, .1);
+  }
+  .lg, .bg-two-screens {
+    background: rgba(80, 204, 92, .1);
   }
   .bg-one-screen, .bg-two-screens, .bg-three-screens {
     img, video {
-      filter: drop-shadow(8px 8px 16px $yousee-primary-darkest);
+      filter: drop-shadow(8px 8px 16px #DFE6DF);
     }
   }
 }
@@ -400,37 +390,29 @@ a:hover {
   }
 }
 #further .content a:hover {
-  color: #45403D;
-}
-#further .info a:hover {
-  color: #34524E;
-}
-#greatworks .info a:hover {
-  color: $greatworks-text;
+  color: #45484B;
 }
 #greatworks .content a:hover {
-  color: white;
+  color: $personalfinance-secondary;
 }
 #personalfinance .content a:hover {
-  color: white;
-}
-#personalfinance .info a:hover {
-  color: #F06C88;
+  color: $bullogram-primary;
 }
 #bullogram .content a:hover {
-  color: #8C4358;
-}
-#bullogram .info a:hover {
-  color: #BF5C78;
+  color: $yousee-primary;
 }
 #yousee .content a:hover {
-  color: white;
-}
-#yousee .info a:hover {
-  color: #A1CCA5;
+  color: #406E68;
 }
 #frontpage .info a:hover {
   color: white;
+}
+#further .info a:hover,
+#greatworks .info a:hover,
+#personalfinance .info a:hover,
+#bullogram .info a:hover,
+#yousee .info a:hover, {
+  color: #666666;
 }
 
 /*----------
@@ -463,7 +445,7 @@ MEDIA QUERIES
       }
     }
   }
-  .info, #back-button, .intro, .content, .apropos, .bg-three-screens {
+  .info, #back-button, .intro, .content, .header, .apropos, .bg-three-screens {
     width: 90%;
   }
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens, .picture{
@@ -478,7 +460,7 @@ MEDIA QUERIES
   #back-button + .content h1 + p {
     margin-top: 40px;
   }
-  .content {
+  .content, .header {
     padding: 0px 80px;
     .align-right {
       margin-top: 8px;
@@ -488,10 +470,10 @@ MEDIA QUERIES
     padding: 0px;
     grid-column-gap: 5%;
   }
-  .content, .apropos, .bg-two-screens, .bg-four-screens {
+  .content, .header, .apropos, .bg-two-screens, .bg-four-screens {
     grid-column-gap: 5%;
   }
-  .content, .apropos, {
+  .content, .header, .apropos, {
     grid-template: auto / 1fr 4fr;
   }
   .top160 {
@@ -534,10 +516,10 @@ MEDIA QUERIES
         margin-bottom: 80px;
       }
   }
-.info, #back-button {
+  .info, #back-button {
     margin: 40px 5% 60px 5%;
   }
-  #back-button + .content {
+  .header {
     margin: 40px auto;
     padding: 0px;
     h1 + p {
@@ -553,7 +535,7 @@ MEDIA QUERIES
       margin: 20px auto;
     }
   }
-  .info, #cases, .content, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
+  .info, #cases, .content, .header, .apropos, .bg-two-screens, .bg-three-screens, .bg-four-screens {
     display: block;
   }
   .info {
@@ -565,7 +547,7 @@ MEDIA QUERIES
   .top8 {
     margin-bottom: 20px;
   }
-  .content {
+  .content, .header {
     padding: 0px;
     .align-right {
       margin-bottom: 40px;

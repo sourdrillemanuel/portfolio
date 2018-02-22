@@ -14,31 +14,51 @@
       <div id="back-button">
         <a href="index.html"><img src="assets/icon-arrow-back-further.svg">Cases</a>
       </div>
-      <div class="content">
+      <div class="header">
         <div class="align-right top15">
           <p class="minion">2016</p>
           <p>Photography</p>
         </div>
         <div>
           <h1><span class="minion">Further.</span> Fifty thousand kilometers.</h1>
-          <p class="top80">"Further" chronicles the trip of two digital and geography lovers along the Ancient Silk Road. If the main trade route was originally from Istanbul, Turkey to Xi'an, China, they chose to travel from Western France to Beijing by the south, and then from Beijing to France by the north.</p>
+          <p class="top80">"Further" chronicles the journey of two geography addicts along the Ancient Silk Road. Originally from Istanbul to Xi’an, we chose to travel from France to China by the south, and from China to France by the north. Our ambition was to set off for an adventure far away from our comfort zone. During a year, we hitchhiked 50.000 kilometres in twenty countries.</p>
         </div>
       </div>
       <div class="lg top160"><img src="assets/further-09.jpg" alt="Further"></div>
+      <div class="picture top160"><img src="assets/further-02.jpg" alt="Further"></div>
+      <p class="align-center">Turkey</p>
+      <div class="picture top80"><img src="assets/further-03.jpg" alt="Further"></div>
+      <p class="align-center">Armenia</p>
+      <div class="picture top80"><img src="assets/further-04.jpg" alt="Further"></div>
+      <p class="align-center">Iran</p>
       <div class="content top160">
         <div></div>
         <div>
-          <p>"Further" chronicles the trip of two digital and geography lovers along the Ancient Silk Road. If the main trade route was originally from Istanbul, Turkey to Xi'an, China, they chose to travel from Western France to Beijing by the south, and then from Beijing to France by the north.</p>
+          <p>In that cold evening, we settled our camp at the top of a windy hill, overlooking Kalardasht in northern Iran. We immediately spotted the first waves of clouds submerging the mountains separating the valley from the Caspian sea. Soon, the sea of clouds poured into the valley and the last lights of the day disappeared. After a cold night among the frozen clouds, the sun eventually rised above the eastern snowy peaks. The view was breathtaking, we were standing on an isolated island among a constantly moving sea of clouds. During the next thirty minutes, we fought the negative temperatures to take as many pictures as possible before the sun becomes too harsh.</p>
         </div>
       </div>
-      <div class="picture top160"><img src="assets/further-02.jpg" alt="Further"></div>
-      <div class="picture top80"><img src="assets/further-03.jpg" alt="Further"></div>
-      <div class="picture top80"><img src="assets/further-04.jpg" alt="Further"></div>
       <div class="picture top80"><img src="assets/further-05.jpg" alt="Further"></div>
+      <p class="align-center">Iran</p>
       <div class="picture top80"><img src="assets/further-06.jpg" alt="Further"></div>
+      <p class="align-center">Iran</p>
       <div class="picture top80"><img src="assets/further-07.jpg" alt="Further"></div>
+      <p class="align-center">Iran</p>
+      <div class="content top160">
+        <div></div>
+        <div>
+          <p>Central Asia is home to the highest mountains in the world. For instance, Kyrgyzstan has five mountain ranges splitting the country from west to east. You can easily wander in peace, surrounded by an untouched nature without spotting any human for several days. A week before we entered China, we decided to enjoy the highlands of the Suusamyr Valley one more time. There, the snow hadn't melted yet and the temperatures were still negative during the night. It was end of May.</p>
+        </div>
+      </div>
       <div class="picture top80"><img src="assets/further-08.jpg" alt="Further"></div>
+      <p class="align-center">Kyrgyzstan</p>
       <div class="picture top80"><img src="assets/further-01.jpg" alt="Further"></div>
+      <p class="align-center">Greece</p>
+      <div class="content top160">
+        <div></div>
+        <div>
+          <p>From sub-tropical regions where we grabbed oranges and lemons in winter, to inaccessible mountains where the snow never leaves, we experienced a intense journey among very different cultures and landscapes. Even in the driest desert, there was ever something to see and learn.</p>
+        </div>
+      </div>
       <div class="content top160 bottom160">
         <div class="align-right top15">
           <p>Next project</p>
@@ -59,6 +79,23 @@
       $(window).on('load', function() {
         $(".loader").fadeOut("slow");
       });
+      </script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          if (scroll > 600) {
+            $("body").css("background" , "white");
+            $(".header p").css("color" , "white");
+            $(".header p").css("opacity" , "1");
+          }
+          else{
+            $("body").css("background" , "#406E68");
+            $(".header p").css("color" , "white");
+            $(".header p").css("opacity" , ".6");
+          }
+        })
+      })
       </script>
     </body>
 </html>

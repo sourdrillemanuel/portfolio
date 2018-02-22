@@ -14,7 +14,7 @@
       <div id="back-button">
         <a href="index.html"><img src="assets/icon-arrow-back-yousee.svg">Cases</a>
       </div>
-      <div class="content">
+      <div class="header">
         <div class="align-right top15">
           <p class="minion">2017</p>
           <p>Visual design</p>
@@ -59,6 +59,25 @@
       $(window).on('load', function() {
         $(".loader").fadeOut("slow");
       });
+      </script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+          if (scroll > 600) {
+            $("body").css("background" , "white");
+            $(".header p").css("color" , "white");
+            $(".header p").css("opacity" , "1");
+            $(".bg-one-screen").css("background" , "rgba(80, 204, 92, .1)");
+          }
+          else{
+            $("body").css("background" , "#50CC5C");
+            $(".header p").css("color" , "white");
+            $(".header p").css("opacity" , ".8");
+            $(".bg-one-screen").css("background" , "rgba(255, 255, 255, .1)");
+          }
+        })
+      })
       </script>
     </body>
 </html>
