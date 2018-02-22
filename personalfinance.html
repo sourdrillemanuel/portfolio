@@ -45,10 +45,11 @@
       </div>
       <div class="content top160">
         <div></div>
-        <div><p>Through achievements and skills, we keep kids’ interest high and aim to raise their self-esteem and financial confidence.</p>
+        <div><p class="bottom160">Through achievements and skills, we keep kids’ interest high and aim to raise their self-esteem and financial confidence.</p>
         </div>
       </div>
-      <div class="content top160 bottom160">
+      <div class="separator"></div>
+      <div class="content top160 bottom80">
         <div class="align-right top15">
           <p>Next project</p>
         </div>
@@ -56,10 +57,10 @@
           <h2><a href="bullogram.html"><span class="minion">Bullogram</span> fights breast cancer with traditionnal Swedish "kanelbulle".</a></h2>
         </div>
       </div>
-      <div class="info">
+      <div class="info bottom80">
         <div></div>
         <div class="align-right">
-          <p><a href="mailto:manuel.sourdrille@gmail.com">Get in touch</a></p>
+          <p><a href="mailto:manuel.sourdrille@gmail.com">@mail</a></p>
           <p><a href="https://fr.linkedin.com/in/manuel-sourdrille-1004a44a" target="_blank">Linkedin</a></p>
         </div>
       </div>
@@ -73,14 +74,14 @@
       $(document).ready(function(){
         $(window).scroll(function(){
           var scroll = $(window).scrollTop();
-          if (scroll > 600) {
+          if (scroll > 500) {
             $("body").css("background" , "white");
-            $(".header p").css("color" , "white");
+            $(".header p").css("color" , "#999999");
             $(".header p").css("opacity" , "1");
           }
           else{
             $("body").css("background" , "#F03C64");
-            $(".header p").css("color" , "#white");
+            $(".header p").css("color" , "white");
             $(".header p").css("opacity" , ".8");
           }
         })

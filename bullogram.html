@@ -43,12 +43,13 @@
           <img class="top80" src="assets/bullogram-desktop-04.jpg" alt="Bullogram Desktop Screen">
         </div>
       </div>
-      <div class="bg-three-screens top80">
+      <div class="bg-three-screens top80 bottom160">
         <div><img class="shadow" src="assets/bullogram-phone-04.png" alt="Bullogram iPhone Screen"></div>
         <div><img class="shadow" src="assets/bullogram-phone-05.png" alt="Bullogram iPhone Screen"></div>
         <div><img class="shadow" src="assets/bullogram-phone-06.png" alt="Bullogram iPhone Screen"></div>
       </div>
-      <div class="content top80 bottom160">
+      <div class="separator"></div>
+      <div class="content top160 bottom160">
         <div class="align-right top15">
           <p>Next project</p>
         </div>
@@ -56,10 +57,10 @@
           <h2><a href="yousee.html">Mærk musikken.<br>A <span class="minion">youSee</span> live event at the Royal Arena.</a></h2>
         </div>
       </div>
-      <div class="info">
+      <div class="info bottom80">
         <div></div>
         <div class="align-right">
-          <p><a href="mailto:manuel.sourdrille@gmail.com">Get in touch</a></p>
+          <p><a href="mailto:manuel.sourdrille@gmail.com">@mail</a></p>
           <p><a href="https://fr.linkedin.com/in/manuel-sourdrille-1004a44a" target="_blank">Linkedin</a></p>
         </div>
       </div>
@@ -73,9 +74,9 @@
       $(document).ready(function(){
         $(window).scroll(function(){
           var scroll = $(window).scrollTop();
-          if (scroll > 600) {
+          if (scroll > 500) {
             $("body").css("background" , "white");
-            $(".header p").css("color" , "white");
+            $(".header p").css("color" , "#999999");
             $(".header p").css("opacity" , "1");
           }
           else{

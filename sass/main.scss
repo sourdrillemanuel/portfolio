@@ -102,9 +102,10 @@ h1, h2 {
   }
 }
 h3 {
+  margin-top: 20px;
   color: white;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 32px;
+  line-height: 46px;
 }
 a {
   text-decoration: none;
@@ -133,6 +134,18 @@ video {
 LAYOUT
 ----------*/
 
+.separator {
+  width: 100%;
+  height: 1px;
+  background: black;
+  opacity: .05;
+}
+.separator-light {
+  width: 100%;
+  height: 1px;
+  background: white;
+  opacity: .3;
+}
 .header {
   margin: 160px auto auto auto;
   h1 + p {
@@ -140,7 +153,7 @@ LAYOUT
   }
 }
 .info {
-  margin: 40px 80px 160px 80px;
+  margin: 40px 80px auto 80px;
 }
 .lg, .bg-four-screens {
   width: 100%;
@@ -191,11 +204,18 @@ LAYOUT
 TWEAKS
 ----------*/
 
+/*fonts*/
 .minion {
   font-family: $fourth-font;
+  font-style: italic;
 }
+
+/*margins*/
 .bottom160 {
   margin-bottom: 160px;
+}
+.bottom80 {
+  margin-bottom: 80px;
 }
 .top160 {
   margin-top: 160px;
@@ -209,6 +229,8 @@ TWEAKS
 .top8 {
     margin-top: 8px;
 }
+
+/*align*/
 .align-right {
   text-align: right;
 }
@@ -445,7 +467,7 @@ MEDIA QUERIES
       }
     }
   }
-  .info, #back-button, .intro, .content, .header, .apropos, .bg-three-screens {
+  .info, #back-button, .content, .header, .bg-three-screens {
     width: 90%;
   }
   #cases, .intro, .apropos, .bg-one-screen, .bg-two-screens, .bg-four-screens, .picture{
@@ -506,31 +528,31 @@ MEDIA QUERIES
     line-height: 36px;
   }
   #frontpage #cases {
+    padding: 10%;
     margin: 80px auto auto auto;
     .greatworks, .bullogram, .yousee, .personalfinance {
       padding-right: 0px;
       padding-left: 0px;
     }
-      img + p, img + p + p {
-        margin-top: 10px;
-        margin-bottom: 80px;
-      }
+    img + p, img + p + p {
+      margin-top: 10px;
+      margin-bottom: 80px;
+    }
+  }
+  .intro, .apropos, .header, .content, .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens, .picture {
+    width: 100%;
+    padding: 10%;
   }
   .info, #back-button {
-    margin: 40px 5% 60px 5%;
+    margin: 40px 10% 60px 10%;
   }
   .header {
     margin: 40px auto;
-    padding: 0px;
     h1 + p {
       margin-top: 40px;
     }
   }
-  .bg-one-screen, .bg-three-screens, .picture {
-    width: 100%;
-  }
   .bg-one-screen, .bg-two-screens, .bg-three-screens, .bg-four-screens {
-    padding: 20px;
     img {
       margin: 20px auto;
     }
@@ -548,7 +570,6 @@ MEDIA QUERIES
     margin-bottom: 20px;
   }
   .content, .header {
-    padding: 0px;
     .align-right {
       margin-bottom: 40px;
     }
@@ -558,5 +579,8 @@ MEDIA QUERIES
   }
   .align-center {
     text-align: left;
+  }
+  .apropos div:nth-child(2) p {
+    margin-top: 20px;
   }
 }
